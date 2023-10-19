@@ -1,0 +1,167 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Login" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1200,1296" sap2010:WorkflowViewState.IdRef="Login_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>CredentialManagement</x:String>
+      <x:String>UiPath.Credentials.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>CredentialManagement</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Credentials.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Login" sap:VirtualizedContainerService.HintSize="608,1231" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Log in - EcoPower_Logistics" sap:VirtualizedContainerService.HintSize="546,1120" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="6bf0cd10-6a44-4a18-a4db-da42b6bcf489" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence sap:VirtualizedContainerService.HintSize="512,903" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Default="34819118@student.g.nwu.ac.za" Name="strUsername" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,788" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="6bf0cd10-6a44-4a18-a4db-da42b6bcf489" Text="[strUsername]" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/Identity/Account/Login" CvElementArea="291, 328, 418, 60" CvType="InputBox" DesignTimeRectangle="293, 330, 416, 58" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT Input_Email'" FullSelectorArgument="&lt;webctrl id='Input_Email' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='Input_Email' tag='INPUT' type='email' class='form-control' aaname='Email' /&gt;" Guid="de041e06-2243-4e76-8e5d-bf6abab4a328" InformativeScreenshot="2b8b9d45f464d566d49553c18e0dd5dc.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Log in - EcoPower_Logistics' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvElementArea="291, 328, 418, 60" CvType="InputBox" DesignTimeRectangle="295, 324, 54, 49" ElementType="Text" FriendlyName="'Email'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='form-label' aaname='Email' check:innerText='Email' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADoAAAA1CAYAAAAQ7fj9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEzSURBVGhD7dTNasJAFIbhueIg9F5EvIeEXIZx0ZVIUUqCC0Fwk40VXZxmJjlpJhTR+EP88r2QxWjUeZyjRgYSoWgRihahaA0LejqdZbvby3KdyediBXkZi/z63jjo4efo9IgZC7QXesaOK/JJasbO7xAiFC1C0SIULULR6gxNow8JRv4VptWTDypPphJM5pKXK5lNun/GXdBxUm7hNRF6VU+A6oYyCXWso6x+vBzzqcwaL3UjqvcWV41J436MbnNzwSiWcg8K0rWC/3DutQ5vK+6PFFOhFdcX6OUTrZZFPqzIA7TK5zLWL+ndoPaUvHvbULv+bzqgoG006om632RjrN26b1B/3BR+44nWf1bVe0Rxv0703SIULULRIhQtQtEiFC1C0SIULULRIhQtQtEaCFTkF7erG7SsSaZvAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="6bf0cd10-6a44-4a18-a4db-da42b6bcf489" Text="12452711@Zain970" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/Identity/Account/Login" CvElementArea="292, 392, 418, 59" CvType="InputBox" DesignTimeRectangle="293, 392, 416, 58" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FriendlyName="'INPUT Input_Password'" FullSelectorArgument="&lt;webctrl id='Input_Password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='Input_Password' tag='INPUT' type='password' class='form-control' aaname='Password' /&gt;" Guid="b41801ea-3ba8-4c63-bd60-ebbda34ecd67" InformativeScreenshot="6585a86f7a7d27fdac78a1e0432d4e3a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Log in - EcoPower_Logistics' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvElementArea="292, 392, 418, 59" CvType="InputBox" DesignTimeRectangle="295, 386, 78, 49" ElementType="Text" FriendlyName="'Password'" FullSelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' type='' class='form-label' check:innerText='Password' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFIAAAA1CAYAAADS3bx5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJ9SURBVHhe7ZY7SwQxEMfziUXwO9haKWKr7R12FoqIFp4iNr7PYhdLtTlEFIQbM3ntZG993O6AK/x/EG43j9nkl0nULO9MCXQHIpWASCUgUgmzsjelpxfI7IrZGk1p/xYiu2J2r6e0euBlPiIzW2MOx0Qsc9NmJh9zvjNR5i9O5NHdBx3fPNPZZUnnl2OUFsWwxLOrBxo/PNPk9T0kKpgXw5l4byWCbpiLu5Je35CJXTF8vkF3IFIJiFQCIpWASCUgUgmIVAIilYBIJVqLLIZLtLAoyzYVoe2/wmtaO5mEt/noJFJ+dHKy8e9l9kKkVUmj9Q0atZtHL+iJyJIGi1EkP4tjv35qNQcmp7Qm2gYhhX1Gx3rObN6Yqp3hby4My/AWxsT3YluMz/u5NjuHEY+3bY3fDO1/LtJNKgqzE68EeKn+vS6npIKfnVxxLRS23v5kotLmVP14Di6WkyhPg/9Oml+QXH23Nl8m9PkTkWk3uchJ1aik1xYYcSIbrgWuj3H5eWizJl0fLNZLrW+qI2Shq5XPjtlsZxrj/BLFoy3xE5Wiq76iTR4/ceRlxsbrgjOI6/nXxWI5bnyzlCzLZ0RWcSU9Ezm7sK/6cn0m0yGvgji2tDGDlJClRRSa+tTiy2z+VUb6uh6JrO+2F+P72mchLt2BdqHVomqLdBKstDSO2+27/A+B+/x0R2Yi/fyzOhejVyKDoHBM+Y/DIPX1C0xtcSHiWHPJ4+YZysxIYIKIxhgNIhkXJ46xG/Xdmn6itUiQA5FKQKQSEKkERCoBkUpApBIQqQREKgGRSkCkEhCpBEQqAZFKQKQSEKkERCoBkUpApBIQqQREKgGRKhB9AnvpNxTwMFdlAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log in'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6bf0cd10-6a44-4a18-a4db-da42b6bcf489" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/Identity/Account/Login" CvElementArea="292, 432, 419, 50" CvTextArea="473, 448, 56, 23" CvTextArgument="Log in" CvType="Button" DesignTimeRectangle="293, 433, 416, 48" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Log in'" FullSelectorArgument="&lt;webctrl id='login-submit' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='login-submit' tag='BUTTON' type='submit' class='w-100 btn btn-lg btn-primary' aaname='Log in' check:innerText='Log in' /&gt;" Guid="8cae337f-0a67-4776-9cdf-755d545016ea" InformativeScreenshot="04616253cd390444898a135643582e97.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Log in - EcoPower_Logistics' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1882, 935" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAK7SURBVDhPdZLda9NQGMbjnyayO+8E8cIbwRsvnOxiMNiF4pggiDKYlyIqgnPuA8uq+17dh9uStV3XNu3aLv1ImzUfbdMmaZImfTw5ZXOCCzxwOOc8v/PkfV8GwI0LJRKJm5Zl4X8yDAOyLIPn+fdXPYymaZeXgvV1n+d5cBwHmUwG5XL5EsJ0Oh3MxRRMbVXxYUeglx3HhSRr/0iUZKpoLIZkMgmSlkIoYGqzitGFM0yt5q8F1OoqBQjlKprNFkRRBMdxtyjgzaaIkfkCnocyFBDE7RgmTMuG2bXJ2qJqkz29Y8KyXXq2trY2RAGvN0Q8mcvj2XeeAoIEwYtKQ4dKVDtXUT1X/YqkolRVoBu2b9mev7yyMgC82qhgZCGPyaVBAvsCoLWoRGIMzOVaAFADAEzbQ/hHeAB4uV7Go9lTjC+m0O/30bUd+mpgltXWFbOCoqig2bZhWD2EQqEhpt1u48VqCQ9nMhhbSML3CaDroEpMiWQafCaLNJ/BVuQXuKMoItu/SSElVGoKpt9O32F0AphYKeLBFx6j8yfwfB8WAQSvpvgscrk8JElCs6WT6g/UIF1QFA0sywmMrrfx9OcZ7n9OYeTbMVzPJ/FsGjmVPkWlIpLBEVEqiSiWKhCKf7V/wApMU9cxHs7j3qcTDH+Nw3F9dEyb/q9ATEFBu7RtDgzTIa20qfSODT5bEJgGiTa2lMfdjwk8nokTg0cSuKSFBsRaHT2vT4w2LWhdaZLiavSsbfaQzRUJgPR5NJTD7XdxDM/GyZB4tEVG18O5rMLt+XR4ArNUbxCoSiaT1KLtIp0VBCYYlLRk4LCkI14KLsioVOsoi3UUydgGgC5N1SP9d6lR0x2qJE8Ax4nkBHcUm2S5gQ4DsdHJA6K19c1llosWDg6PCnv7XGFnjy1s73K5yC6bi+ywufnFcOQP0NGNf8YUGpIAAAAASUVORK5CYII=" InformativeScreenshot="400fc5e22033df4983382cd0cc8ac22f.jpg" Selector="&lt;html app='chrome.exe' title='Log in - EcoPower_Logistics' /&gt;" Title="Log in - EcoPower_Logistics" Url="https://cmpg323-ecopowerlogistics.azurewebsites.net/Identity/Account/Login" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

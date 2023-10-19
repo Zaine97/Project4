@@ -1,0 +1,155 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="EditCust" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1200,1470" sap2010:WorkflowViewState.IdRef="EditCust_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="EditCust" sap:VirtualizedContainerService.HintSize="546,1405" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Login.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="484,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Login.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Index - EcoPower_Logistics" sap:VirtualizedContainerService.HintSize="484,1141" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="cf720fb0-9641-4418-a63f-a9bb837931d7" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,924" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Customers'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="cf720fb0-9641-4418-a63f-a9bb837931d7" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/" DesignTimeRectangle="150, 88, 100, 40" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Customers'" FullSelectorArgument="&lt;webctrl aaname='Customers' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Customers' tag='A' type='' class='nav-link text-dark' check:innerText='Customers' /&gt;" Guid="59cb377c-24a6-450e-ae5b-9e780043dca6" InformativeScreenshot="63499c89b8248c7aeaa31497d6061cfe.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home Page - EcoPower_Logistics' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Edit'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="cf720fb0-9641-4418-a63f-a9bb837931d7" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/Customers" DesignTimeRectangle="645, 341, 27, 21" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Edit'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='' aaname='Edit' check:innerText='Edit' /&gt;" Guid="ce365dd2-97cb-41f8-b554-013b7f37f1b6" ImageBase64="" InformativeScreenshot="97890068e71dd78929235f223f106813.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Index - EcoPower_Logistics' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Customer Cellphone'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="cf720fb0-9641-4418-a63f-a9bb837931d7" Text="0000000000" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/Customers/Edit/123671360" DesignTimeRectangle="87, 497, 216, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'5723177115'" FullSelectorArgument="&lt;webctrl id='CellPhone' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='CellPhone' tag='INPUT' type='text' class='form-control' aaname='Customer Cellphone' /&gt;" Guid="6e8a307b-e738-442b-bffa-24de29cb897d" InformativeScreenshot="1facc947b8af97be11be1e2e9b26c9d5.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Edit - EcoPower_Logistics' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="87, 473, 144, 24" ElementType="Text" FriendlyName="'Customer Cellphone'" FullSelectorArgument="&lt;webctrl aaname='Customer Cellphone' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Customer Cellphone' tag='LABEL' type='' class='control-label' check:innerText='Customer Cellphone' /&gt;" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="cf720fb0-9641-4418-a63f-a9bb837931d7" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/Customers/Edit/123671360" DesignTimeRectangle="87, 535, 59, 38" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Save'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='btn btn-primary' aaname='Save' check:text='Save' /&gt;" Guid="c764cd43-540b-4cd5-b2a7-611e72e07918" InformativeScreenshot="afc96e2502b1d1e920594870847f2aa0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Edit - EcoPower_Logistics' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-7, 0, 870, 926" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAK7SURBVDhPdZLda9NQGMbjnyayO+8E8cIbwRsvnOxiMNiF4pggiDKYlyIqgnPuA8uq+17dh9uStV3XNu3aLv1ImzUfbdMmaZImfTw5ZXOCCzxwOOc8v/PkfV8GwI0LJRKJm5Zl4X8yDAOyLIPn+fdXPYymaZeXgvV1n+d5cBwHmUwG5XL5EsJ0Oh3MxRRMbVXxYUeglx3HhSRr/0iUZKpoLIZkMgmSlkIoYGqzitGFM0yt5q8F1OoqBQjlKprNFkRRBMdxtyjgzaaIkfkCnocyFBDE7RgmTMuG2bXJ2qJqkz29Y8KyXXq2trY2RAGvN0Q8mcvj2XeeAoIEwYtKQ4dKVDtXUT1X/YqkolRVoBu2b9mev7yyMgC82qhgZCGPyaVBAvsCoLWoRGIMzOVaAFADAEzbQ/hHeAB4uV7Go9lTjC+m0O/30bUd+mpgltXWFbOCoqig2bZhWD2EQqEhpt1u48VqCQ9nMhhbSML3CaDroEpMiWQafCaLNJ/BVuQXuKMoItu/SSElVGoKpt9O32F0AphYKeLBFx6j8yfwfB8WAQSvpvgscrk8JElCs6WT6g/UIF1QFA0sywmMrrfx9OcZ7n9OYeTbMVzPJ/FsGjmVPkWlIpLBEVEqiSiWKhCKf7V/wApMU9cxHs7j3qcTDH+Nw3F9dEyb/q9ATEFBu7RtDgzTIa20qfSODT5bEJgGiTa2lMfdjwk8nokTg0cSuKSFBsRaHT2vT4w2LWhdaZLiavSsbfaQzRUJgPR5NJTD7XdxDM/GyZB4tEVG18O5rMLt+XR4ArNUbxCoSiaT1KLtIp0VBCYYlLRk4LCkI14KLsioVOsoi3UUydgGgC5N1SP9d6lR0x2qJE8Ax4nkBHcUm2S5gQ4DsdHJA6K19c1llosWDg6PCnv7XGFnjy1s73K5yC6bi+ywufnFcOQP0NGNf8YUGpIAAAAASUVORK5CYII=" InformativeScreenshot="dc0e64be36b5b881d34b236f19780085.jpg" Selector="&lt;html app='chrome.exe' title='Index - EcoPower_Logistics' /&gt;" Title="Index - EcoPower_Logistics" Url="https://cmpg323-ecopowerlogistics.azurewebsites.net/Customers" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
